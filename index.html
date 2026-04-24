@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heartline • UX Case Study</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span><span>Heartline Case Study</span></a>
+      <div class="nav-links">
+        <a href="https://wangcb424.github.io/portfolio/" target="_blank" rel="noreferrer">Back to Portfolio ↗</a>
+        <a href="#process">Process</a>
+        <a href="#lowfi">Lo-Fi</a>
+        <a href="#prototype">Hi-Fi</a>
+        <a href="#testing">Testing</a>
+        <a href="#next">Next</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- HERO -->
+    <header class="hero">
+      <h1 class="h-title reveal">Heartline — Making Real Friends Without the Awkwardness</h1>
+      <p class="h-sub reveal">
+        Heartline is a low-pressure social interface prototype designed to help Northeastern students bridge online discovery into real-life meetups,
+        reducing awkwardness and emotional risk through trust, clarity, and interest-based connection.
+      </p>
+
+      <div class="meta reveal">
+        <span class="chip">Needfinding</span>
+        <span class="chip">Task Analysis</span>
+        <span class="chip">Lo-Fi → Hi-Fi</span>
+        <span class="chip">User Testing</span>
+        <span class="chip">Iteration</span>
+        <span class="chip">Privacy</span>
+      </div>
+
+      <div class="cta-row reveal">
+        <a class="btn primary" href="#prototype"><span>Jump to Hi-Fi Prototype</span><small>↓</small></a>
+        <a class="btn" target="_blank" rel="noreferrer"
+           href="https://www.figma.com/design/WiRIprCHFzwcm7tHPtfYo0/T4-High-Fidelity-Prototype?node-id=0-1&p=f&t=GrkzfFXiFltwL3iT-0">
+          <span>Open in Figma</span><small>↗</small>
+        </a>
+      </div>
+
+      <div class="callout reveal">
+        <b>POV:</b> Northeastern students who feel socially isolated need a low-pressure way to move from online interaction to real-world, in-person connection,
+        because fear of awkwardness and social missteps prevents them from taking the first step.
+      </div>
+    </header>
+
+    <div class="sep"></div>
+
+    <!-- PROCESS -->
+    <section class="grid cols-2" id="process">
+      <div class="card reveal">
+        <h3>1) Problem & Why it Matters</h3>
+        <p>
+          Students are physically surrounded by peers yet still experience loneliness and social anxiety.
+          Many platforms encourage performance and passive connection rather than genuine in-person friendship.
+        </p>
+        <ul class="bullets">
+          <li><b>Design goal:</b> reduce social “activation energy” to start a friendship</li>
+          <li><b>Principle:</b> psychological safety + low cognitive load</li>
+          <li><b>Bridge:</b> discover → invite → meetup (low-stakes)</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>2) Approach</h3>
+        <p>
+          We focused on reducing hesitation and uncertainty before a user takes social action.
+          That means clear next steps, trust signals, and low-pressure group entry rather than forcing one-on-one cold approaches.
+        </p>
+        <ul class="bullets">
+          <li><b>Trust:</b> identity verification + mutual acceptance before chat</li>
+          <li><b>Discovery:</b> nearby users and interest-based groups</li>
+          <li><b>Coordination:</b> map-based meetup context</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>3) Needfinding & Task Analysis</h3>
+        <p>
+          Task analysis revealed much of the “work” happens before anyone speaks: scanning, risk evaluation, and fear of embarrassment.
+          We designed the interface to intervene early by lowering emotional barriers and decision fatigue.
+        </p>
+        <ul class="bullets">
+          <li><b>Requirement:</b> reduce perceived emotional risk when initiating interaction</li>
+          <li><b>Requirement:</b> enable zero-prep participation (fast to first action)</li>
+          <li><b>Metric idea:</b> Time-to-First-Interaction (TTFI) + follow-through rate</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>4) System Concept</h3>
+        <p>
+          Heartline explores a simple structure: verified identity for trust, map-based discovery to make nearby connections actionable,
+          and groups to reduce the pressure of one-on-one initiation.
+        </p>
+        <ul class="bullets">
+          <li><b>Verification:</b> student ID/documents</li>
+          <li><b>Map:</b> nearby users + meetup context</li>
+          <li><b>Groups:</b> topic + capacity + location</li>
+          <li><b>Communication:</b> chat + voice</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- LO-FI -->
+    <section class="grid cols-2" id="lowfi">
+      <div class="card reveal">
+        <h3>5) Low-Fidelity Prototyping</h3>
+        <p>
+          We translated early ideas into paper screens to quickly test the interaction flow. These sketches focused on the highest-impact user actions:
+          discovering nearby people, joining groups, verifying identity, deciding on location sharing, contacting another user, and managing an account.
+        </p>
+        <ul class="bullets">
+          <li><b>Discovery:</b> map-based browsing of nearby users and shared interests</li>
+          <li><b>Connection:</b> low-pressure actions (Join, Chat, Voice)</li>
+          <li><b>Trust:</b> student verification and location-sharing decisions</li>
+          <li><b>Coordination:</b> route/map concepts for meetups</li>
+          <li><b>Control:</b> settings and contact list for longer-term use</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>Why Lo-Fi mattered</h3>
+        <p>
+          Lo-fi allowed us to spot where users hesitated and what they expected to see next—before investing in hi-fi visuals.
+          It also helped us validate whether the product still felt “low pressure” when moving toward real-life meetups.
+        </p>
+        <ul class="bullets">
+          <li><b>Clarity:</b> do users know what to press next?</li>
+          <li><b>Trust:</b> do users understand verification/location implications?</li>
+          <li><b>Discoverability:</b> can users find map, groups, and actions quickly?</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card reveal" id="lowfi-gallery">
+      <h2>6) Low-Fidelity Prototype Gallery</h2>
+      <p class="h-sub" style="margin-top:6px">
+        Low-fi screens used to explore the core flow and test clarity, trust, navigation, and low-pressure interaction.
+      </p>
+
+      <div class="lowfi-grid">
+        <figure class="lowfi-item">
+          <img src="assets/images/lowfi/group-list.jpg" alt="Low-fidelity group list screen with New+ and Joined options" />
+          <figcaption>
+            <b>Group discovery</b><br>
+            Early group list with “Join” and a concept for separating discovery (<i>New+</i>) from participation (<i>Joined</i>).
+          </figcaption>
+        </figure>
+
+        <figure class="lowfi-item">
+          <img src="assets/images/lowfi/location-share.jpg" alt="Low-fidelity location sharing dialog" />
+          <figcaption>
+            <b>Location sharing prompt</b><br>
+            Early prompt for location sharing. This directly connects to later privacy concerns and the move toward “drop-a-pin.”
+          </figcaption>
+        </figure>
+
+        <figure class="lowfi-item">
+          <img src="assets/images/lowfi/upload-id.jpg" alt="Low-fidelity identity verification upload screen" />
+          <figcaption>
+            <b>Verification upload</b><br>
+            Student ID / documents upload as a trust mechanism. Later iterations required clearer expectations and progress feedback.
+          </figcaption>
+        </figure>
+
+        <figure class="lowfi-item">
+          <img src="assets/images/lowfi/alex-contact.jpg" alt="Low-fidelity contact screen for Alex with chat and voice options" />
+          <figcaption>
+            <b>Contact action</b><br>
+            Simple, low-pressure next step after viewing a user: choose <i>Chat</i> or <i>Voice</i>.
+          </figcaption>
+        </figure>
+
+        <figure class="lowfi-item">
+          <img src="assets/images/lowfi/route-map.jpg" alt="Low-fidelity route map between two points" />
+          <figcaption>
+            <b>Meetup route view</b><br>
+            Explores spatial coordination for in-person meetups. Later informed map clarity and interaction cues.
+          </figcaption>
+        </figure>
+
+        <figure class="lowfi-item">
+          <img src="assets/images/lowfi/nearby-users-map.jpg" alt="Low-fidelity map showing nearby users and interests" />
+          <figcaption>
+            <b>Nearby users map</b><br>
+            Displays nearby people and their interests to help users find shared-context connection opportunities.
+          </figcaption>
+        </figure>
+
+        <figure class="lowfi-item">
+          <img src="assets/images/lowfi/settings.jpg" alt="Low-fidelity settings and profile management screen" />
+          <figcaption>
+            <b>Settings / profile control</b><br>
+            Edit profile and delete account concepts. Supports transparency and user control.
+          </figcaption>
+        </figure>
+
+        <figure class="lowfi-item">
+          <img src="assets/images/lowfi/contact-list.jpg" alt="Low-fidelity contact list screen with chat and voice controls" />
+          <figcaption>
+            <b>Contact list</b><br>
+            Quick access to established contacts with <i>chat</i> and <i>voice</i> actions—useful for reducing friction over time.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- HI-FI -->
+    <section id="prototype">
+      <div class="card reveal">
+        <h2>7) Hi-Fidelity Prototype (Figma)</h2>
+        <p class="h-sub" style="margin-top:6px">
+          Embedded Figma prototype. If it doesn’t load, check Figma sharing permission: “Anyone with the link can view”.
+        </p>
+
+        <div class="figma-embed">
+          <iframe
+            title="Figma Prototype"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FWiRIprCHFzwcm7tHPtfYo0%2FT4-High-Fidelity-Prototype%3Fnode-id%3D0-1%26p%3Df%26t%3DGrkzfFXiFltwL3iT-0">
+          </iframe>
+        </div>
+
+        <div class="cta-row" style="margin-top:14px">
+          <a class="btn" target="_blank" rel="noreferrer"
+             href="https://www.figma.com/design/WiRIprCHFzwcm7tHPtfYo0/T4-High-Fidelity-Prototype?node-id=0-1&p=f&t=GrkzfFXiFltwL3iT-0">
+            <span>Open prototype in a new tab</span><small>↗</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- TESTING & ITERATION -->
+    <section class="grid cols-2" id="testing">
+      <div class="card reveal">
+        <h3>8) Testing Findings</h3>
+        <p>
+          Our low-fi and hi-fi testing surfaced consistent friction points: unclear feedback after actions, map/navigation ambiguity,
+          verification expectation gaps, and missing discoverability cues.
+        </p>
+        <ul class="bullets">
+          <li><b>No feedback after actions:</b> users unsure invite sent / group joined → confirmation states (✓)</li>
+          <li><b>Navigation & map confusion:</b> users tapped wrong tabs or didn’t realize map was interactive → onboarding cues</li>
+          <li><b>Verification expectation gap:</b> requirements felt sudden → clearer ID explanation + progress indicator</li>
+          <li><b>Discoverability:</b> missing/weak search and key actions → add search + clearer CTAs</li>
+          <li><b>Engagement:</b> group creation needed a clear CTA</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>9) Iterations</h3>
+        <ul class="bullets">
+          <li><b>Clarity & discoverability:</b> stronger CTAs, improved profile hierarchy</li>
+          <li><b>Trust & transparency:</b> step-by-step verification flow + progress feedback</li>
+          <li><b>Interaction & navigation:</b> map cues (markers/hints) and improved tab structure</li>
+          <li><b>Engagement:</b> add search bar, “Create Group”, and separate New vs Joined groups</li>
+        </ul>
+        <div class="callout">
+          <b>Key takeaway:</b> Designing for friendship means designing for trust, clarity, and emotional safety—not just adding more social features.
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- NEXT STEPS -->
+    <section class="card reveal" id="next">
+      <h3>10) What’s Next</h3>
+      <ul class="bullets">
+        <li><b>Privacy-first location:</b> switch to “drop-a-pin” visibility instead of always-on live tracking</li>
+        <li><b>Onboarding:</b> guided walkthrough/tooltips for map, invitations, and group actions</li>
+        <li><b>Adoption strategy:</b> pilot with freshmen/transfers during onboarding programs and campus events</li>
+      </ul>
+    </section>
+
+    <div class="footer" id="footer"></div>
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
