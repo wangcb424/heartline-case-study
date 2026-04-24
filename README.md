@@ -1,7 +1,7 @@
 # Heartline UX Case Study — Portfolio Website Report
 
 ## Live Website URL
-- Case Study site: [PASTE YOUR PUBLIC URL HERE]
+- Case Study site:https://wangcb424.github.io/heartline-case-study/
 - Main portfolio: https://wangcb424.github.io/portfolio/
 - Figma prototype: https://www.figma.com/design/WiRIprCHFzwcm7tHPtfYo0/T4-High-Fidelity-Prototype?node-id=0-1&p=f&t=GrkzfFXiFltwL3iT-0
 
@@ -10,7 +10,7 @@ This is a standalone UX case study website for **Heartline**, a course project f
 
 ---
 
-## Requirement 1 — Project case study (1%)
+## Requirement 1 — Project case study
 **How it is met:**
 This website includes a dedicated case study that goes beyond final screens and walks through:
 - **Problem & POV** (target user Alex; why in-person initiation feels intimidating)
@@ -27,14 +27,14 @@ This website includes a dedicated case study that goes beyond final screens and 
 
 ---
 
-## Requirement 2 — Deployed & accessible (1%)
+## Requirement 2 — Deployed & accessible
 **How it is met:**
 - The site is deployed publicly and can be accessed at the URL above.
 - Hosting method: GitHub Pages (Settings → Pages → Deploy from `main` branch).
 
 ---
 
-## Requirement 3 — Something that wows me (1%)
+## Requirement 3 — Something that wows me
 **How it is met:**
 - **Strong visual design:** Heartline-inspired light theme (white background, pastel blue accents, minimalist layout).
 - **Creative interactions:** scroll reveal animations, micro-interactions on cards/buttons, back-to-top control.
