@@ -1,5 +1,4 @@
 (function heartlineUX(){
-  // Scroll pop reveal (once per element)
   function initPopReveal() {
     const reveals = Array.from(document.querySelectorAll(".reveal"));
     if (!reveals.length) return;
@@ -10,17 +9,13 @@
 
         const el = e.target;
 
-        // show + pop once
         el.classList.add("show");
         if (!el.dataset.popped) {
           el.classList.add("pop");
           el.dataset.popped = "1";
-
-          // remove pop class after animation finishes
           setTimeout(() => el.classList.remove("pop"), 650);
         }
 
-        // observe once
         io.unobserve(el);
       });
     }, { threshold: 0.18 });
@@ -28,7 +23,6 @@
     reveals.forEach(r => io.observe(r));
   }
 
-  // Back to top
   function initToTop() {
     const btn = document.getElementById("toTop");
     if (!btn) return;
@@ -42,7 +36,6 @@
     });
   }
 
-  // Footer year
   function initFooter() {
     const year = new Date().getFullYear();
     const f = document.getElementById("footer");

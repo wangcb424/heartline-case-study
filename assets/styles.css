@@ -1,14 +1,13 @@
 :root{
   /* Whole-page gradient: TOP white -> MID cream -> BOTTOM yellow */
   --bg-top: #ffffff;
-  --bg-mid: #fff8de;     /* soft cream transition */
-  --bg-bottom: #ffeaa6;  /* cream yellow bottom */
+  --bg-mid: #fff8de;
+  --bg-bottom: #ffeaa6;
 
   --panel: #ffffff;
   --muted: #5b6b84;
   --text: #0f172a;
 
-  /* pastel blue accent */
   --brand: #6aa9ff;
   --brand-2: #9ad4ff;
 
@@ -33,14 +32,9 @@ a{color:inherit;text-decoration:none}
 a:hover{color:var(--text)}
 .container{max-width:var(--max);margin:0 auto;padding:24px}
 
-/* ===== Whole-page gradient: TOP white -> BOTTOM cream yellow ===== */
+/* Whole-page gradient */
 body{
-  background: linear-gradient(
-    180deg,
-    var(--bg-top) 0%,
-    var(--bg-mid) 52%,
-    var(--bg-bottom) 100%
-  );
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 52%, var(--bg-bottom) 100%);
 }
 
 /* subtle glow */
@@ -252,7 +246,7 @@ body::before{
   border-radius: 12px;
 }
 
-/* ===== Pop-in (file-organizing "jump") reveal ===== */
+/* ===== “整理文件抽出来”的跳一下动画 ===== */
 .reveal{
   opacity: 0;
   transform: translateY(18px) scale(.985);
@@ -260,10 +254,7 @@ body::before{
   transition: opacity .25s ease;
   will-change: transform, opacity;
 }
-.reveal.show{
-  opacity: 1;
-}
-/* Pop animation: lift -> overshoot -> settle */
+.reveal.show{ opacity: 1; }
 .reveal.pop{
   animation: popIn 520ms cubic-bezier(.2,.9,.2,1.15) both;
 }
